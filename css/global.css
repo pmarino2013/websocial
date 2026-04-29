@@ -16,6 +16,7 @@
   img {
     height: 100%;
     filter: grayscale(0.8);
+    object-fit: cover;
   }
 }
 
@@ -24,4 +25,13 @@
   position: absolute;
   inset: 0;
   z-index: 1;
+}
+
+.card {
+  background-color: var(--sunnt-3);
+}
+
+.footer {
+  padding: 20px 0px;
+  background-color: var(--sunny-1);
 }
