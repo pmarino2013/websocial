@@ -1,0 +1,27 @@
+:root {
+  --sunny-1: #264653;
+  --sunny-2: #2a9d8f;
+  --sunny-2-ov: #2a9d9055;
+  --sunnt-3: #e9c46a;
+  --sunny-4: #f4a261;
+  --sunny-5: #e76f51;
+}
+
+.navbar-sunny {
+  background-color: var(--sunny-1);
+}
+
+.carousel-item {
+  height: 100%;
+  img {
+    height: 100%;
+    filter: grayscale(0.8);
+  }
+}
+
+.overlay {
+  background-color: var(--sunny-2-ov);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
