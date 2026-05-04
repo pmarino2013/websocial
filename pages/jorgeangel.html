@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jorge Angel</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<style>
+:root{
+  --sunny-1: #264653;
+  --sunny-2: #2a9d8f;
+  --sunny-2-ov: #2a9d9055;
+  --sunny-3: #e9c46a;
+  --sunny-4: #f4a261;
+  --sunny-5: #e76f51;
+}
+
+
+body{
+  background: linear-gradient(0deg, var(--sunny-3), white);
+}
+
+/* Navbar */
+.nav{
+  background-color: var(--sunny-1);
+}
+.nav-link{
+  color: white !important;
+}
+.nav-link:hover{
+  color: var(--sunny-3) !important;
+}
+
+
+h1, h2{
+  color: var(--sunny-1);
+}
+
+
+.carousel-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.section-box{
+  background-color: var(--sunny-2-ov);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.btn-primary{
+  background-color: var(--sunny-2);
+  border: none;
+}
+.btn-primary:hover{
+  background-color: var(--sunny-1);
+}
+
+
+footer{
+  background-color: var(--sunny-1);
+  color: white;
+  padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+<ul class="nav justify-content-center p-2 ">
+  <li class="nav-item">
+    <a class="nav-link" href="#sobre">Sobre Mi</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#proyectos">Proyectos</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#contacto">Contacto</a>
+  </li>
+</ul>
+</header>
+
+
+<main class="container text-center mt-4">
+
+<h1 class="mb-4">Jorge Angel</h1>
+
+
+<div id="carouselExampleSlidesOnly" 
+     class="carousel slide mb-4" 
+     data-bs-ride="carousel" 
+     data-bs-interval="4000" 
+     data-bs-pause="false">
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active text-center">
+      <img src="/websocial/assets/jorge1.jpg" class="carousel-img mx-auto d-block" alt="">
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="/websocial/assets/jorge2.jpg" class="carousel-img mx-auto d-block" alt="">
+    </div>
+
+  </div>
+</div>
+
+
+<section id="sobre" class="section-box">
+  <h2>Sobre mí</h2>
+  <p>
+    Soy profesor de informática en la escuela Técnica N°5 de San Miguel de Tucumán, donde me desempeño formando estudiantes 
+    en el uso de herramientas tecnológicas y el pensamiento lógico aplicado a la programación.
+  </p>
+  <p>
+    Me interesa transmitir no solo conocimientos técnicos, sino también motivar a los alumnos 
+    a desarrollar habilidades para resolver problemas y adaptarse a los cambios tecnológicos.
+  </p>
+</section>
+
+
+<section id="proyectos" class="section-box">
+  <h2>Proyectos</h2>
+  <p>
+    Actualmente me encuentro realizando un curso de programación en 
+    <strong>Rolling Code</strong>, enfocado en desarrollo web tanto frontend como backend.
+  </p>
+  <p>
+    Como parte de mi aprendizaje, estoy desarrollando un proyecto personal llamado 
+    <strong>Transporte Z</strong>, una web orientada a servicios de transporte, donde aplico 
+    conocimientos de diseño web, estructura de páginas y experiencia de usuario.
+  </p>
+</section>
+
+
+<section id="contacto" class="section-box">
+  <h2>Contacto</h2>
+
+  <form class="text-start">
+
+    <div class="mb-2">
+      <input type="text" class="form-control" placeholder="Nombre" required>
+    </div>
+
+    <div class="mb-2">
+      <input type="email" class="form-control" placeholder="Correo" required>
+    </div>
+
+    <div class="mb-2">
+      <textarea class="form-control" rows="3" placeholder="Mensaje"></textarea>
+    </div>
+
+    <button class="btn btn-primary w-100">
+      Enviar
+    </button>
+
+  </form>
+
+</section>
+
+</main>
+
+
+<footer class="text-center">
+  <p>© 2026 Jorge Angel - Todos los derechos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
