@@ -1,439 +1,668 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lautaro Luna | Mi Perfil</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
-    <link rel="stylesheet" href="../css/global.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="../css/global.css" />
     <style>
-    
-        html, body {
-          max-width: 100vw;
-          overflow-x: hidden;
-          background-color: #f4f6f8;
-          color: var(--sunny-1);
-          font-family: 'Poppins', system-ui, -apple-system, sans-serif;
-        }
+      html,
+      body {
+        max-width: 100vw;
+        overflow-x: hidden;
+        background-color: #f4f6f8;
+        color: var(--sunny-1);
+        font-family:
+          "Poppins",
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
 
-        .texto-destacado-1 {
-          color: var(--sunny-1);
-          font-weight: 800;
-        }
-        
-        .texto-destacado-2 {
-          color: var(--sunny-5);
-          font-weight: bold;
-        }
+      .texto-destacado-1 {
+        color: var(--sunny-1);
+        font-weight: 800;
+      }
 
-        .box-sunny {
-          background-color: white;
-          border-radius: 12px;
-          border-top: 4px solid var(--sunny-2);
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        }
+      .texto-destacado-2 {
+        color: var(--sunny-5);
+        font-weight: bold;
+      }
 
-        /*  NAVBAR  */
-        .nav-custom {
-          border-bottom: 4px solid var(--sunny-4);
-          
-          .nav-link {
-            color: rgba(255,255,255,0.85) !important;
-            transition: color 0.3s ease;
-            font-weight: 500;
-            
-            &:hover {
-              color: var(--sunnt-3) !important;
-            }
+      .box-sunny {
+        background-color: white;
+        border-radius: 12px;
+        border-top: 4px solid var(--sunny-2);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      /*  NAVBAR  */
+      .nav-custom {
+        border-bottom: 4px solid var(--sunny-4);
+
+        .nav-link {
+          color: rgba(255, 255, 255, 0.85) !important;
+          transition: color 0.3s ease;
+          font-weight: 500;
+
+          &:hover {
+            color: var(--sunnt-3) !important;
           }
         }
-        
-        .navbar-brand {
-          color: var(--sunnt-3) !important;
-        }
+      }
 
-        /*  PERFIL   */
-        .perfil-hero {
-          background-color: white;
-          border-bottom: 1px solid #e1e4e8;
-          padding-bottom: 2rem;
-          box-shadow: 0 2px 10px rgba(0,0,0,0.02);
-        }
+      .navbar-brand {
+        color: var(--sunnt-3) !important;
+      }
 
-        .perfil-cover {
+      /*  PERFIL   */
+      .perfil-hero {
+        background-color: white;
+        border-bottom: 1px solid #e1e4e8;
+        padding-bottom: 2rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+      }
+
+      .perfil-cover {
+        height: 120px;
+        background: linear-gradient(
+          135deg,
+          var(--sunny-1) 0%,
+          var(--sunny-2) 100%
+        );
+        border-bottom: 4px solid var(--sunny-4);
+        position: relative;
+
+        @media (min-width: 576px) {
+          height: 150px;
+        }
+        @media (min-width: 768px) {
+          height: 220px;
+        }
+      }
+
+      .perfil-foto {
+        width: 100px;
+        height: 100px;
+        margin-top: -55px;
+        object-fit: cover;
+        object-position: top;
+        background-color: white;
+        border: 4px solid white !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        position: relative;
+        z-index: 2;
+
+        @media (min-width: 576px) {
+          width: 120px;
           height: 120px;
-          background: linear-gradient(135deg, var(--sunny-1) 0%, var(--sunny-2) 100%);
-          border-bottom: 4px solid var(--sunny-4);
-          position: relative;
-          
-          @media (min-width: 576px) { height: 150px; }
-          @media (min-width: 768px) { height: 220px; }
+          margin-top: -65px;
+        }
+        @media (min-width: 768px) {
+          width: 180px;
+          height: 180px;
+          margin-top: -90px;
         }
 
-        .perfil-foto {
-          width: 100px;
-          height: 100px;
-          margin-top: -55px;
-          object-fit: cover;
-          object-position: top;
-          background-color: white;
-          border: 4px solid white !important;
-          box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-          transition: transform 0.3s ease;
-          position: relative;
-          z-index: 2;
-          
-          @media (min-width: 576px) { width: 120px; height: 120px; margin-top: -65px; }
-          @media (min-width: 768px) { width: 180px; height: 180px; margin-top: -90px; }
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
 
-          &:hover {
-            transform: scale(1.05);
-          }
+      .stats-box {
+        border-top: 1px solid #e1e4e8;
+
+        .stat-item {
+          text-align: center;
         }
 
-        
-        .stats-box {
-          border-top: 1px solid #e1e4e8;
-          
-          .stat-item {
-            text-align: center;
-          }
-          
-          .stat-value {
-            font-size: 1.1rem;
-            font-weight: 800;
-            color: var(--sunny-1);
-            display: block;
-            
-            @media (min-width: 576px) { font-size: 1.3rem; }
-          }
-          
-          .stat-label {
-            font-size: 0.85rem;
-            color: #6c757d;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 500;
+        .stat-value {
+          font-size: 1.1rem;
+          font-weight: 800;
+          color: var(--sunny-1);
+          display: block;
+
+          @media (min-width: 576px) {
+            font-size: 1.3rem;
           }
         }
 
-      
-        .card {
-          background-color: white !important;
-          border: none;
-          border-top: 4px solid var(--sunny-1) !important;
-          border-radius: 12px;
-          box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-          color: var(--sunny-1) !important;
-          cursor: pointer;
-          
-          &:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-          }
+        .stat-label {
+          font-size: 0.85rem;
+          color: #6c757d;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 500;
         }
+      }
 
-        .btn-primary-sunny {
-          background-color: var(--sunny-2);
+      .card {
+        background-color: white !important;
+        border: none;
+        border-top: 4px solid var(--sunny-1) !important;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        color: var(--sunny-1) !important;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+      }
+
+      .btn-primary-sunny {
+        background-color: var(--sunny-2);
+        color: white;
+        border: none;
+
+        &:hover {
+          background-color: var(--sunny-1);
           color: white;
-          border: none;
-          
-          &:hover {
-            background-color: var(--sunny-1);
-            color: white;
-          }
         }
-        
-        .btn-outline-sunny {
-          border: 2px solid var(--sunny-4);
-          color: var(--sunny-4);
-          background: transparent;
-          font-weight: 600;
-          
-          &:hover {
-            background-color: var(--sunny-4);
-            color: white;
-          }
-        }
+      }
 
-        /* FOOTER*/
-        .footer {
+      .btn-outline-sunny {
+        border: 2px solid var(--sunny-4);
+        color: var(--sunny-4);
+        background: transparent;
+        font-weight: 600;
+
+        &:hover {
+          background-color: var(--sunny-4);
           color: white;
-          border-top: 4px solid var(--sunny-5);
-          
-          a {
-            color: var(--sunnt-3);
-            transition: color 0.3s ease, transform 0.3s ease;
-            display: inline-block;
-            
-            &:hover {
-              color: white;
-              transform: scale(1.1);
-            }
-          }
-          
-          hr {
-            border-color: rgba(255,255,255,0.2);
-          }
         }
+      }
 
-        /* CARRUSEL  */
-        .carousel {
-          border-radius: 12px;
-          overflow: hidden;
-          box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-        
-        .carousel-inner {
-          height: 250px;
-          @media (min-width: 576px) { height: 300px; }
-          @media (min-width: 768px) { height: 400px; }
-        }
+      /* FOOTER*/
+      .footer {
+        color: white;
+        border-top: 4px solid var(--sunny-5);
 
-        
-        .carousel-item img {
-          object-fit: contain !important;
-          filter: none !important;
-        }
-        
-        .overlay {
-          display: none !important;
-        }
-        
-        .carousel-caption {
-          z-index: 5;
-          background-color: rgba(38, 70, 83, 0.85);
-          border-radius: 8px;
-          padding: 1.5rem;
-        }
+        a {
+          color: var(--sunnt-3);
+          transition:
+            color 0.3s ease,
+            transform 0.3s ease;
+          display: inline-block;
 
-        /* === TABLAS === */
-        .table-custom {
-          background-color: white;
-          
-          th {
-            background-color: var(--sunny-1);
-            color: white;
-            border-color: var(--sunny-1);
-          }
-        }
-
-        /* BOTÓN WP */
-        .btn-wsp {
-          width: 55px;
-          height: 55px;
-          z-index: 2000;
-          background-color: var(--sunny-2) !important;
-          border-color: var(--sunny-2) !important;
-          color: white !important;
-          transition: transform 0.3s ease;
-          bottom: 35px;
-          right: 15px;
-          
-          @media (min-width: 768px) {
-            width: 60px;
-            height: 60px;
-            bottom: 30px;
-            right: 20px;
-          }
-          
           &:hover {
+            color: white;
             transform: scale(1.1);
-            background-color: var(--sunny-1) !important;
-            border-color: var(--sunny-1) !important;
           }
         }
+
+        hr {
+          border-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+
+      /* CARRUSEL  */
+      .carousel {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .carousel-inner {
+        height: 250px;
+        @media (min-width: 576px) {
+          height: 300px;
+        }
+        @media (min-width: 768px) {
+          height: 400px;
+        }
+      }
+
+      .carousel-item img {
+        object-fit: contain !important;
+        filter: none !important;
+      }
+
+      .overlay {
+        display: none !important;
+      }
+
+      .carousel-caption {
+        z-index: 5;
+        background-color: rgba(38, 70, 83, 0.85);
+        border-radius: 8px;
+        padding: 1.5rem;
+      }
+
+      /* === TABLAS === */
+      .table-custom {
+        background-color: white;
+
+        th {
+          background-color: var(--sunny-1);
+          color: white;
+          border-color: var(--sunny-1);
+        }
+      }
+
+      /* BOTÓN WP */
+      .btn-wsp {
+        width: 55px;
+        height: 55px;
+        z-index: 2000;
+        background-color: var(--sunny-2) !important;
+        border-color: var(--sunny-2) !important;
+        color: white !important;
+        transition: transform 0.3s ease;
+        bottom: 35px;
+        right: 15px;
+
+        @media (min-width: 768px) {
+          width: 60px;
+          height: 60px;
+          bottom: 30px;
+          right: 20px;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          background-color: var(--sunny-1) !important;
+          border-color: var(--sunny-1) !important;
+        }
+      }
     </style>
-</head>
-<body>
-      <!-- NAVEGACIÓN -->
+  </head>
+  <body>
+    <!-- NAVEGACIÓN -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top navbar-sunny nav-custom" aria-label="Navegación principal">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="#" aria-label="Inicio">Lautaro Luna</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav gap-2 gap-lg-3">
-                        <li class="nav-item"><a class="nav-link" href="#perfil" aria-label="Ir a la sección Perfil">Perfil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contacto" aria-label="Ir a la sección Contacto">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#experiencia" aria-label="Ir a la sección Experiencia laboral">Experiencia</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#habilidades" aria-label="Ir a la sección Habilidades técnicas">Habilidades</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#galeria" aria-label="Ir a la sección Mis Proyectos">Galería</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark sticky-top navbar-sunny nav-custom"
+        aria-label="Navegación principal"
+      >
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#" aria-label="Inicio"
+            >Lautaro Luna</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav gap-2 gap-lg-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#perfil"
+                  aria-label="Ir a la sección Perfil"
+                  >Perfil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#contacto"
+                  aria-label="Ir a la sección Contacto"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#experiencia"
+                  aria-label="Ir a la sección Experiencia laboral"
+                  >Experiencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#habilidades"
+                  aria-label="Ir a la sección Habilidades técnicas"
+                  >Habilidades</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#galeria"
+                  aria-label="Ir a la sección Mis Proyectos"
+                  >Galería</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-<main>
-    <!-- PERFIL -->
-        <section id="perfil" class="perfil-hero text-center mb-5">
-            <!-- Portada degradado -->
-            <div class="perfil-cover"></div>
-            <div class="container px-4">        
-                <!-- Foto de perfil -->
-                <img src="./assets/cvlautaro.jpg" alt="Foto de Lautaro Luna"
-                     class="perfil-foto rounded-circle" width="180" height="180">
-                <h1 class="mt-3 texto-destacado-1 fs-2">Lautaro Luna</h1>
-                <p class="lead text-secondary mb-1">Estudiante Full Stack Developer</p>
-                <p class="text-secondary small"><i class="bi bi-geo-alt-fill"></i> Tucumán, Argentina · 25 años</p>
-                
-                <!-- Botones -->
-                <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
-                    <a href="#contacto" class="btn btn-primary-sunny rounded-pill px-4" aria-label="Ir a sección contacto para seguir a Lautaro">
-                        <i class="bi bi-person-plus" aria-hidden="true"></i> Seguir
-                    </a>
-                    <a href="https://wa.me/3815738866" target="_blank" class="btn btn-outline-sunny rounded-pill px-4" aria-label="Enviar un mensaje a Lautaro vía WhatsApp">
-                        <i class="bi bi-chat-dots" aria-hidden="true"></i> Mensaje
-                    </a>
-                </div>
+    <main>
+      <!-- PERFIL -->
+      <section id="perfil" class="perfil-hero text-center mb-5">
+        <!-- Portada degradado -->
+        <div class="perfil-cover"></div>
+        <div class="container px-4">
+          <!-- Foto de perfil -->
+          <img
+            src="./assets/cvlautaro.jpg"
+            alt="Foto de Lautaro Luna"
+            class="perfil-foto rounded-circle"
+            width="180"
+            height="180"
+          />
+          <h1 class="mt-3 texto-destacado-1 fs-2">Lautaro Luna</h1>
+          <p class="lead text-secondary mb-1">
+            Estudiante Full Stack Developer
+          </p>
+          <p class="text-secondary small">
+            <i class="bi bi-geo-alt-fill"></i> Tucumán, Argentina · 25 años
+          </p>
 
-                <!-- Estadísticas -->
-                <div class="stats-box d-flex justify-content-center flex-wrap gap-3 gap-md-5 mt-4 pt-4">
-                    <div class="stat-item">
-                        <span class="stat-value">3</span>
-                        <span class="stat-label">Proyectos</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-value">10k</span>
-                        <span class="stat-label">Seguidores</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-value">420</span>
-                        <span class="stat-label">Siguiendo</span>
-                    </div>
-                </div>
+          <!-- Botones -->
+          <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
+            <a
+              href="#contacto"
+              class="btn btn-primary-sunny rounded-pill px-4"
+              aria-label="Ir a sección contacto para seguir a Lautaro"
+            >
+              <i class="bi bi-person-plus" aria-hidden="true"></i> Seguir
+            </a>
+            <a
+              href="https://wa.me/3815738866"
+              target="_blank"
+              class="btn btn-outline-sunny rounded-pill px-4"
+              aria-label="Enviar un mensaje a Lautaro vía WhatsApp"
+            >
+              <i class="bi bi-chat-dots" aria-hidden="true"></i> Mensaje
+            </a>
+          </div>
+
+          <!-- Estadísticas -->
+          <div
+            class="stats-box d-flex justify-content-center flex-wrap gap-3 gap-md-5 mt-4 pt-4"
+          >
+            <div class="stat-item">
+              <span class="stat-value">3</span>
+              <span class="stat-label">Proyectos</span>
             </div>
-        </section>
-
-      
-        <section id="sobre-mi" class="container my-5">
-            <article class="box-sunny p-3 p-md-4 text-center">
-                <h2 class="texto-destacado-2 mb-3">Sobre Mí</h2>
-                <p class="mb-0 text-secondary">Tengo 25 años y soy de Tucumán, Argentina. Actualmente estudio desarrollo Full Stack y trabajo de seguridad en una perfumeria. Me apasiona la tecnología, el emprendimiento digital y seguir creciendo profesionalmente. Siempre buscando nuevos desafíos.</p>
-            </article>
-        </section>
-        <!-- DATOS DE CONTACTO -->
-        <section id="contacto" class="container mb-5">
-            <h2 class="text-center texto-destacado-1 mb-4 fs-3 fs-md-2">Contacto</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 justify-content-center">
-                <article class="col">
-                    <a href="mailto:lautaroolunaa18@gmail.com" class="card h-100 text-center p-4 text-decoration-none" style="color: var(--sunny-1);" aria-label="Enviar un correo electrónico a Lautaro">
-                        <i class="bi bi-envelope fs-1 mb-2" aria-hidden="true"></i>
-                        <h3 class="fs-5 mt-2 fw-bold">Email</h3>
-                        <span class="text-dark small mt-1">lautaroolunaa18@gmail.com</span>
-                    </a>
-                </article>
-                <article class="col">
-                    <a href="https://wa.me/3815738866" class="card h-100 text-center p-4 text-decoration-none" style="color: var(--sunny-1);" aria-label="Llamar por teléfono a Lautaro">
-                        <i class="bi bi-phone fs-1 mb-2" aria-hidden="true"></i>
-                        <h3 class="fs-5 mt-2 fw-bold">Teléfono</h3>
-                        <span class="text-dark small mt-1">3815738866</span>
-                    </a>
-                </article>
-                <article class="col">
-                    <a href="https://www.linkedin.com/in/lautaro-luna-0a8984206/" class="card h-100 text-center p-4 text-decoration-none" style="color: var(--sunny-1);" aria-label="Visitar el perfil de LinkedIn de Lautaro" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-linkedin fs-1 mb-2" aria-hidden="true"></i>
-                        <h3 class="fs-5 mt-2 fw-bold">LinkedIn</h3>
-                        <span class="text-dark small mt-1">Ver perfil</span>
-                    </a>
-                </article>
+            <div class="stat-item">
+              <span class="stat-value">10k</span>
+              <span class="stat-label">Seguidores</span>
             </div>
-        </section>
-        <!-- EXPERIENCIA LABORAL -->
-        <section id="experiencia" class="container mb-5">
-            <h2 class="text-center texto-destacado-1 mb-4 fs-3 fs-md-2">Experiencia Laboral</h2>
-            <div class="row g-4">
-                <article class="col-12 col-md-4">
-                    <div class="box-sunny p-3 p-md-4 h-100">
-                        <h3 class="fs-5 texto-destacado-1"><i class="bi bi-shield-check"></i> Perfumería Gloss</h3>
-                        <span class="badge bg-success mb-3">Actualmente</span>
-                        <ul class="text-secondary small">
-                            <li>Atención y orientación al cliente.</li>
-                            <li>Supervisión general del local.</li>
-                            <li>Trabajo en equipo con el personal de ventas.</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="col-12 col-md-4">
-                    <div class="box-sunny p-3 p-md-4 h-100">
-                        <h3 class="fs-5 texto-destacado-1"><i class="bi bi-shop"></i> Emprendedor</h3>
-                        <span class="badge bg-secondary mb-3">Experiencia previa</span>
-                        <ul class="text-secondary small">
-                            <li>Venta de electrodomésticos.</li>
-                            <li>Publicaciones con publicidad en redes sociales.</li>
-                            <li>Creación de tienda virtual (Tienda Nube).</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="col-12 col-md-4">
-                    <div class="box-sunny p-3 p-md-4 h-100">
-                        <h3 class="fs-5 texto-destacado-1"><i class="bi bi-wrench"></i> Taller La 1974</h3>
-                        <span class="badge bg-secondary mb-3">Experiencia previa</span>
-                        <ul class="text-secondary small">
-                            <li>Ayudante de Mecánico.</li>
-                            <li>Service Completo de vehículos.</li>
-                            <li>Venta de repuestos.</li>
-                        </ul>
-                    </div>
-                </article>
+            <div class="stat-item">
+              <span class="stat-value">420</span>
+              <span class="stat-label">Siguiendo</span>
             </div>
-        </section>
-          <!-- HABILIDADES TÉCNICAS -->
-        <section id="habilidades" class="container mb-5">
-            <h2 class="text-center texto-destacado-1 mb-4 fs-3 fs-md-2">Habilidades Técnicas</h2>
-            <div class="box-sunny p-3 p-md-4">
-                <div class="table-responsive">
-                    <table class="table table-custom table-hover table-bordered text-center align-middle mb-0">
-                        <thead>
-                            <tr>
-                                <th scope="col">Tecnología</th>
-                                <th scope="col">Nivel</th>
-                                <th scope="col">Uso principal</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><i class="bi bi-filetype-html text-danger fs-4"></i> HTML5</td>
-                                <td>Avanzado</td>
-                                <td>Estructura Semántica</td>
-                            </tr>
-                            <tr>
-                                <td><i class="bi bi-filetype-css text-info fs-4"></i> CSS3</td>
-                                <td>Intermedio-Alto</td>
-                                <td>Diseño y Animaciones</td>
-                            </tr>
-                            <tr>
-                                <td><i class="bi bi-bootstrap text-purple fs-4" style="color: #7a28cb;"></i> Bootstrap 5</td>
-                                <td>Intermedio</td>
-                                <td>Diseño Responsivo</td>
-                            </tr>
-                            <tr>
-                                <td><i class="bi bi-git text-dark fs-4"></i> Git &amp; GitHub</td>
-                                <td>Intermedio</td>
-                                <td>Control de Versiones</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre-mi" class="container my-5">
+        <article class="box-sunny p-3 p-md-4 text-center">
+          <h2 class="texto-destacado-2 mb-3">Sobre Mí</h2>
+          <p class="mb-0 text-secondary">
+            Tengo 25 años y soy de Tucumán, Argentina. Actualmente estudio
+            desarrollo Full Stack y trabajo de seguridad en una perfumeria. Me
+            apasiona la tecnología, el emprendimiento digital y seguir creciendo
+            profesionalmente. Siempre buscando nuevos desafíos.
+          </p>
+        </article>
+      </section>
+      <!-- DATOS DE CONTACTO -->
+      <section id="contacto" class="container mb-5">
+        <h2 class="text-center texto-destacado-1 mb-4 fs-3 fs-md-2">
+          Contacto
+        </h2>
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 justify-content-center"
+        >
+          <article class="col">
+            <a
+              href="mailto:lautaroolunaa18@gmail.com"
+              class="card h-100 text-center p-4 text-decoration-none"
+              style="color: var(--sunny-1)"
+              aria-label="Enviar un correo electrónico a Lautaro"
+            >
+              <i class="bi bi-envelope fs-1 mb-2" aria-hidden="true"></i>
+              <h3 class="fs-5 mt-2 fw-bold">Email</h3>
+              <span class="text-dark small mt-1"
+                >lautaroolunaa18@gmail.com</span
+              >
+            </a>
+          </article>
+          <article class="col">
+            <a
+              href="https://wa.me/3815738866"
+              class="card h-100 text-center p-4 text-decoration-none"
+              style="color: var(--sunny-1)"
+              aria-label="Llamar por teléfono a Lautaro"
+            >
+              <i class="bi bi-phone fs-1 mb-2" aria-hidden="true"></i>
+              <h3 class="fs-5 mt-2 fw-bold">Teléfono</h3>
+              <span class="text-dark small mt-1">3815738866</span>
+            </a>
+          </article>
+          <article class="col">
+            <a
+              href="https://www.linkedin.com/in/lautaro-luna-0a8984206/"
+              class="card h-100 text-center p-4 text-decoration-none"
+              style="color: var(--sunny-1)"
+              aria-label="Visitar el perfil de LinkedIn de Lautaro"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-linkedin fs-1 mb-2" aria-hidden="true"></i>
+              <h3 class="fs-5 mt-2 fw-bold">LinkedIn</h3>
+              <span class="text-dark small mt-1">Ver perfil</span>
+            </a>
+          </article>
+        </div>
+      </section>
+      <!-- EXPERIENCIA LABORAL -->
+      <section id="experiencia" class="container mb-5">
+        <h2 class="text-center texto-destacado-1 mb-4 fs-3 fs-md-2">
+          Experiencia Laboral
+        </h2>
+        <div class="row g-4">
+          <article class="col-12 col-md-4">
+            <div class="box-sunny p-3 p-md-4 h-100">
+              <h3 class="fs-5 texto-destacado-1">
+                <i class="bi bi-shield-check"></i> Perfumería Gloss
+              </h3>
+              <span class="badge bg-success mb-3">Actualmente</span>
+              <ul class="text-secondary small">
+                <li>Atención y orientación al cliente.</li>
+                <li>Supervisión general del local.</li>
+                <li>Trabajo en equipo con el personal de ventas.</li>
+              </ul>
             </div>
-        </section>
+          </article>
+          <article class="col-12 col-md-4">
+            <div class="box-sunny p-3 p-md-4 h-100">
+              <h3 class="fs-5 texto-destacado-1">
+                <i class="bi bi-shop"></i> Emprendedor
+              </h3>
+              <span class="badge bg-secondary mb-3">Experiencia previa</span>
+              <ul class="text-secondary small">
+                <li>Venta de electrodomésticos.</li>
+                <li>Publicaciones con publicidad en redes sociales.</li>
+                <li>Creación de tienda virtual (Tienda Nube).</li>
+              </ul>
+            </div>
+          </article>
+          <article class="col-12 col-md-4">
+            <div class="box-sunny p-3 p-md-4 h-100">
+              <h3 class="fs-5 texto-destacado-1">
+                <i class="bi bi-wrench"></i> Taller La 1974
+              </h3>
+              <span class="badge bg-secondary mb-3">Experiencia previa</span>
+              <ul class="text-secondary small">
+                <li>Ayudante de Mecánico.</li>
+                <li>Service Completo de vehículos.</li>
+                <li>Venta de repuestos.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- HABILIDADES TÉCNICAS -->
+      <section id="habilidades" class="container mb-5">
+        <h2 class="text-center texto-destacado-1 mb-4 fs-3 fs-md-2">
+          Habilidades Técnicas
+        </h2>
+        <div class="box-sunny p-3 p-md-4">
+          <div class="table-responsive">
+            <table
+              class="table table-custom table-hover table-bordered text-center align-middle mb-0"
+            >
+              <thead>
+                <tr>
+                  <th scope="col">Tecnología</th>
+                  <th scope="col">Nivel</th>
+                  <th scope="col">Uso principal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <i class="bi bi-filetype-html text-danger fs-4"></i> HTML5
+                  </td>
+                  <td>Avanzado</td>
+                  <td>Estructura Semántica</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="bi bi-filetype-css text-info fs-4"></i> CSS3
+                  </td>
+                  <td>Intermedio-Alto</td>
+                  <td>Diseño y Animaciones</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i
+                      class="bi bi-bootstrap text-purple fs-4"
+                      style="color: #7a28cb"
+                    ></i>
+                    Bootstrap 5
+                  </td>
+                  <td>Intermedio</td>
+                  <td>Diseño Responsivo</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="bi bi-git text-dark fs-4"></i> Git &amp; GitHub
+                  </td>
+                  <td>Intermedio</td>
+                  <td>Control de Versiones</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- GALERÍA / PROYECTOS (Carrusel) -->
+      <section id="galeria" class="container mb-5">
+        <h2 class="text-center texto-destacado-1 mb-4 fs-3 fs-md-2">
+          Mis Proyectos
+        </h2>
+        <div
+          id="carruselProyectos"
+          class="carousel slide box-sunny p-0 overflow-hidden"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carruselProyectos"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carruselProyectos"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/lsuplements.png"
+                class="d-block w-100"
+                alt="Captura de pantalla del proyecto web Luna Supplements"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="fw-bold">Luna Supplements</h5>
+                <p class="mb-0">
+                  Tienda de suplementos deportivos con diseño moderno.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/proyecto-automatiza.png"
+                class="d-block w-100"
+                alt="Captura de pantalla de la plataforma Automatiza tu Éxito"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="fw-bold">Automatiza tu Éxito</h5>
+                <p class="mb-0">
+                  Plataforma de infraestructura high-ticket y recursos pro.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carruselProyectos"
+            data-bs-slide="prev"
+            style="z-index: 10"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carruselProyectos"
+            data-bs-slide="next"
+            style="z-index: 10"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+    </main>
 
-
-
-
-
-
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
