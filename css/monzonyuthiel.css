@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+table.mi-tabla tbody tr {
+  background-color: var(#e9c46a);
+  color: white;
+}
+
+table.mi-tabla thead {
+  background-color: var(#f4a261);
+  color: white;
+}
+.card-img-top img-fluid {
+  height: 150px;
+  object-fit: cover; }
+
+  .footer{
+    width: 100%;
+    padding:20px 0px;
+     background-color: var(#264653); 
+  }
