@@ -1,0 +1,21 @@
+ /* estilos propios */
+        
+        .encabezado-principal {
+            padding: 50px 0;
+            background-color: var(--primary-color, #6c757d);
+            color: white;
+            border-radius: 20px;
+        }
+        
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+
+        #miCarrusel img {
+        
+            filter: grayscale(0%) !important;
+            -webkit-filter: grayscale(0%) !important; 
+        }
