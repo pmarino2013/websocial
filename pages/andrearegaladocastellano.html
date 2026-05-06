@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Andrea Regalado Castellano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+
+
+    
+    <style>
+        /* estilos propios */
+        
+        .encabezado-principal {
+            padding: 50px 0;
+            background-color: var(--primary-color, #6c757d);
+            color: white;
+            border-radius: 20px;
+        }
+        
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+
+        #miCarrusel img {
+        
+            filter: grayscale(0%) !important;
+            -webkit-filter: grayscale(0%) !important; 
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <div class="container my-5">
+        
+        <header class="encabezado-principal text-center mb-5 shadow">
+            <h1>Andrea Regalado Castellano</h1>
+            <p>Técnica Superior en Computación y Redes | Estudiante | Emprendedora</p>
+        </header>
+
+        <div class="row align-items-start">
+    
+    <div class="col-md-5 mb-4">
+        <div class="card shadow-sm text-center">
+            <div class="card-body">
+                <img src="img/me2.jpeg" class="foto-perfil rounded-circle mb-3" alt="Mi Foto">
+                <h3>Sobre Mí</h3>
+                <p class="text-muted">Apasionada por la tecnología y el diseño manual artesanal.</p>
+                <hr>
+                <div class="text-start">
+                    <p class="mb-1">🐾 <strong>Mascotas:</strong> 4 perritos</p>
+                    <p class="mb-1">⚡ <strong>Fan de:</strong> Harry Potter</p>
+                    <p class="mb-1">🎨 <strong>Esencia:</strong> Creatividad constante</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-7 mb-4">
+        <div id="miCarrusel" class="carousel slide shadow-sm" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                
+                <div class="carousel-item active">
+                    <img src="img/eterealogo.jpeg" class="d-block w-100" alt="Etérea" style="height: 350px; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block text-dark fw-bold">
+                        <span style="background-color: rgba(255,255,255,0.6); padding: 5px 10px; border-radius: 10px;">Etérea Accesorios</span>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/me.jpeg" class="d-block w-100" alt="Viajes" style="height: 350px; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block text-dark fw-bold">
+                        <span style="background-color: rgba(255,255,255,0.6); padding: 5px 10px; border-radius: 10px;">Nuevas Experiencias</span>
+                    </div>
+                </div>
+
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" style="filter: invert(1);" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" style="filter: invert(1);" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3>Habilidades Técnicas</h3>
+                        <table class="table table-hover mt-3">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Tecnología</th>
+                                    <th>Nivel</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>Intermedio (Proyecto Dulce Control)</td>
+                                </tr>
+                                <tr>
+                                    <td>Bases de Datos</td>
+                                    <td>MySQL / Gestión de Inventarios</td>
+                                </tr>
+                                <tr>
+                                    <td>Diseño Web</td>
+                                    <td>HTML, CSS y Bootstrap</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div> </div> </div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
