@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mi Página Personal</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --sunny-1: #264653;
+      --sunny-2: #2a9d8f;
+      --sunny-2-ov: #2a9d9055;
+      --sunny-3: #e9c46a;
+      --sunny-4: #f4a261;
+      --sunny-5: #e76f51;
+    }
+
+    body {
+      background: var(--sunny-1);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      padding-top: 80px;
+    }
+
+    .navbar {
+      background-color: var(--sunny-2);
+    }
+
+    .card-custom {
+      background: var(--sunny-2-ov);
+      border-radius: 20px;
+      border: none;
+      max-width: 700px;
+      margin: auto;
+      transition: 0.3s;
+    }
+
+    .card-custom:hover {
+      transform: scale(1.02);
+    }
+
+    .titulo-box {
+      display: inline-block;
+      background: var(--sunny-2);
+      padding: 6px 15px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    
+    
+
+    .card-proyecto {
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card-proyecto:hover {
+      transform: scale(1.05);
+    }
+
+    .card-proyecto img {
+      height: 200px;
+      object-fit: contain;
+      background: black;
+      transition: 0.3s;
+    }
+
+    .card-proyecto:hover img {
+      transform: scale(1.1);
+    }
+
+    #visor {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.9);
+      justify-content: center;
+      align-items: center;
+    }
+
+    #visor img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    footer {
+      background: var(--sunny-2);
+      text-align: center;
+      padding: 20px;
+      border-top: 3px solid var(--sunny-3);
+    }
+
+    footer a {
+      color: white;
+      margin: 0 10px;
+      font-size: 22px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--sunny-4);
+    }
+
+    .badge-html { background: var(--sunny-5); }
+    .badge-css { background: var(--sunny-2); }
+    .badge-bootstrap { background: var(--sunny-3); color: black; }
+    .badge-git { background: var(--sunny-4); }
+    .badge-github { background: black; }
+
+    
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #inicio, #sobre, #proyectos {
+      scroll-margin-top: 90px;
+    }
+    .profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--sunny-3);
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.profile-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+footer a i {
+  transition: 0.3s;
+}
+
+footer a:hover i {
+  transform: scale(1.3) translateY(-3px);
+}
+  </style>
+</head>
+
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"> Rolling Code</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#redes">Redes</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main>
+
+<div class="container text-center py-5" id="inicio">
+  <img src="../assets/alvaro.jpg" class="profile-img mb-3">
+  <h1>Cedrón Álvaro Miguel</h1>
+  <p>Desarrollador Frontend en crecimiento </p>
+</div>
+
+<div class="container" id="sobre">
+  <div class="card card-custom p-4 mb-4 text-center">
+    <h3><span class="titulo-box">Sobre Mí</span></h3>
+
+    <p class="mt-3">
+      Desarrollador Front-End en formación con una sólida trayectoria de más de 10 años en el ámbito industrial como soldador, participando en proyectos de gran escala y liderando equipos de trabajo. Esta experiencia me permitió desarrollar habilidades clave como la responsabilidad, el trabajo en equipo, la resolución de problemas y la gestión de proyectos bajo presión.
+
+Actualmente me encuentro enfocado en mi transición al mundo IT, adquiriendo conocimientos en HTML, CSS, Bootstrap y Git, con el objetivo de crecer profesionalmente como desarrollador web. Busco oportunidades laborales remotas donde pueda aportar compromiso, aprendizaje continuo y una fuerte ética de trabajo, mientras sigo desarrollando mis habilidades técnicas.
+    </p>
+  </div>
+
+  <div class="card card-custom p-4 mb-4 text-center">
+    <h3><span class="titulo-box">Habilidades</span></h3>
+
+    <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+      <span class="badge badge-html"><i class="fab fa-html5"></i> HTML</span>
+      <span class="badge badge-css"><i class="fab fa-css3-alt"></i> CSS</span>
+      <span class="badge badge-bootstrap"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+      <span class="badge badge-git"><i class="fab fa-git-alt"></i> Git Bash</span>
+      <span class="badge badge-github"><i class="fab fa-github"></i> GitHub</span>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5" id="proyectos">
+  <div class="card card-custom p-4 text-center">
+
+    <h2 class="mb-4">
+      <span class="titulo-box">Mis Proyectos</span>
+    </h2>
+
+    <div class="mb-4">
+      <div class="card card-proyecto">
+        <img src="../assets/proyecto1.png" onclick="abrirImagen(this.src)">
+        <div class="card-body">
+          <h5>Proyecto 1</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <div class="card card-proyecto">
+        <img src="../assets/proyecto2.png" onclick="abrirImagen(this.src)">
+        <div class="card-body">
+          <h5>Proyecto 2</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <div class="card card-proyecto">
+        <img src="../assets/proyecto3.png" onclick="abrirImagen(this.src)">
+        <div class="card-body">
+          <h5>Proyecto 3</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+<div id="visor" onclick="cerrarImagen()">
+  <img id="imgGrande">
+</div>
+
+<footer id="redes">
+  <p>Mis redes</p>
+
+  <a href="https://www.linkedin.com/in/%C3%A1lvaro-miguel-cedron-1b0216391" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <a href="https://wa.me/543813318394" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a href="https://www.facebook.com/alvaro.cedron" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-facebook"></i>
+  </a>
+
+  <a href="https://www.instagram.com/alvaro_cedron/" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-instagram"></i>
+  </a>
+</footer>
+
+<script>
+function abrirImagen(src) {
+  document.getElementById("visor").style.display = "flex";
+  document.getElementById("imgGrande").src = src;
+}
+
+function cerrarImagen() {
+  document.getElementById("visor").style.display = "none";
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

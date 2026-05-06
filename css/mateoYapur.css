@@ -1,0 +1,54 @@
+   /* Solo lo que Bootstrap no puede hacer por si solo */
+      main {
+        background-color: #264653;
+        background-image:
+          radial-gradient(circle at center center, #e9c46a, #264653),
+          repeating-radial-gradient(
+            circle at center center,
+            #e9c46a,
+            #e9c46a,
+            27px,
+            transparent 54px,
+            transparent 27px
+          );
+        background-blend-mode: multiply;
+      }
+
+      .card img {
+        object-fit: cover;
+        height: 300px;
+      }
+
+      .card {
+        background-color: var(--sunny-1) !important;
+        border: 3px solid var(--sunny-2);
+      }
+
+      .welcome-section {
+        background-color: var(--sunny-1);
+        border: 2px solid var(--sunny-2);
+      }
+
+      .accordion-item {
+        background-color: var(--sunny-1);
+        border: 1px solid var(--sunny-2);
+      }
+
+      .accordion-button {
+        background-color: var(--sunny-2);
+        color: white;
+      }
+
+      .accordion-button:not(.collapsed) {
+        background-color: var(--sunny-4);
+        color: white;
+      }
+
+      .accordion-body {
+        background-color: var(--sunny-1);
+        color: #fff;
+      }
+
+      .card-text {
+        color: var(--sunnt-3);
+      }

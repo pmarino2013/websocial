@@ -1,0 +1,25 @@
+:root {
+  --sunny-1: #264653;
+  --sunny-2: #2a9d8f;
+  --sunny-2-ov: #2a9d9055;
+  --sunny-3: #e9c46a;
+  --sunny-4: #f4a261;
+  --sunny-5: #e76f51;
+}
+body {
+  background-color: var(--sunny-1);
+}
+h2 {
+  color: white;
+}
+.img-carousel {
+  height: 400px;
+  object-fit: contain;
+}
+.accordion-button {
+  background-color: var(--sunny-2);
+  color: white;
+}
+.accordion-item {
+  background: var(--sunny-3);
+}
