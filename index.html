@@ -1,174 +1,81 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Web24Social</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
+    <title>WebSocial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"/>
     <link rel="stylesheet" href="./css/global.css" />
   </head>
   <body>
+
+    <!-- NAVBAR -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
           <a class="navbar-brand" href="#">
-            <span class="fw-bold">W</span>eb<i class="bi bi-people-fill"></i
-            >Social</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            <i class="bi bi-people-fill"></i>WebSocial
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-1">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Inicio</a
-                >
+                <a class="nav-link active" href="#">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Sobre nosotros</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="pages/lenithblock.html">
+                  <i class="bi bi-person-circle me-1"></i>Perfiles
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
     <main>
-      <section class="vh-100">
-        <div
-          id="carouselSocial"
-          class="carousel slide carousel-fade h-100"
-          data-bs-pause="false"
-          data-bs-ride="carousel"
-        >
+
+      <!-- hero -->
+      <section class="hero-section">
+        <div id="carouselSocial" class="carousel slide carousel-fade h-100" data-bs-pause="false" data-bs-ride="carousel">
           <div class="carousel-inner h-100">
             <div class="carousel-item active">
-              <img
-                src="./assets/carousel_1.jpg"
-                class="d-block w-100"
-                alt="imagen 1"
-              />
+              <img src="./assets/carousel_1.jpg" alt="imagen 1"/>
             </div>
             <div class="carousel-item">
-              <img
-                src="./assets/carousel_2.jpg"
-                class="d-block w-100"
-                alt="imagen 2"
-              />
+              <img src="./assets/carousel_2.jpg" alt="imagen 2"/>
             </div>
             <div class="carousel-item">
-              <img
-                src="./assets/carousel_3.jpg"
-                class="d-block w-100"
-                alt="imagen 3"
-              />
+              <img src="./assets/carousel_3.jpg" alt="imagen 3"/>
             </div>
-            <div class="overlay"></div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselSocial"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSocial" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
           </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselSocial"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselSocial" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
           </button>
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <p class="section-label" style="margin-bottom:12px;">La red para devs</p>
+          <h1>Conectá con quienes<br><span>construyen el futuro</span></h1>
+          <p>Una comunidad de tech entusiastas, devs y emprendedores digitales de Argentina y el mundo.</p>
+          <a href="#features" class="hero-cta">
+            <i class="bi bi-arrow-down"></i> Explorar
+          </a>
         </div>
       </section>
 
-      <!-- Tarjetas  -->
-      <section id="tarjetas" class="my-3">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            <div class="col">
-              <div class="card">
-                <div class="card-body text-center">
-                  <h5 class="card-title fs-1">
-                    <i class="bi bi-person-plus-fill"></i> Networking
-                  </h5>
-
-                  <p class="card-text fs-4">
-                    Conocé gente copada como vos que tiene pasión por la
-                    tecnología.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body text-center">
-                  <h5 class="card-title fs-1">
-                    <i class="bi bi-person-raised-hand"></i>Cuenta sobre vos
-                  </h5>
-
-                  <p class="card-text fs-4">
-                    Contá a otros sobre vos, tus intereses, proyectos e ideas de
-                    negocios.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body text-center">
-                  <h5 class="card-title fs-1">
-                    <i class="bi bi-stars"></i> Aporta valor
-                  </h5>
-
-                  <p class="card-text fs-4">
-                    Comparte lo que sabés con otros para ayudarlos a crecer y
-                    que puedan lograr sus metas.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 fs-2 text-center">
-            <span class="fw-bold">W</span>eb<i class="bi bi-people-fill"></i
-            >Social
-          </div>
-          <div class="col"></div>
-          <div class="col"></div>
-        </div>
-      </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
