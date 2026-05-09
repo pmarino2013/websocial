@@ -1,0 +1,62 @@
+/* Estilos Card */
+
+.tarjeta{
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+    background-color: var(--sunny-2-ov);
+}
+
+.tarjeta:hover{
+    transform: translateY(-5px);
+}
+
+.tarjeta img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid #000000;
+}
+
+.bi-github{
+    font-size: 50px;
+    color: #24292e;
+}
+
+.bi-whatsapp{
+    font-size: 50px;
+    color: #25D366;
+}
+
+.bi-linkedin{
+    font-size: 50px;
+    color: #0077B5;
+}
+
+.tarjeta-body ul{
+    padding-left: 20px;
+    list-style: none;
+}
+
+.tarjeta-body li{
+    margin-bottom: 15px;
+}
+
+.tarjeta-body li img{
+    height: 2rem;
+    width: 2rem;
+    border: none;
+}
+
+.linkedin:hover{
+    filter: drop-shadow(0 0 8px #0A66C2);
+}
+.whatsapp:hover{
+    filter: drop-shadow(0 0 8px #25D366);
+}
+
+.github:hover{
+    filter: drop-shadow(0 0 8px #1F2328);
+}
+
+
