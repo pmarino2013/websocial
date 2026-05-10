@@ -1,0 +1,38 @@
+#presentacion {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+    color: #e9c46a;
+
+}
+
+#titulo {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 671;
+  font-style: italic;
+}
+
+
+#accordionFlushExample{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 318;
+  font-style: normal;
+}
+
+footer {
+    background-color: #264653;
+}
+
+#sectionSobreMi {
+    background-color: #2a9d8f;
+}
+
+#flush-headingOne {
+    background-color: #e9c46a;
+}
