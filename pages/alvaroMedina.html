@@ -16,9 +16,12 @@
     />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./alvaroMedina.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oswald:wght@318&family=Roboto+Mono:ital,wght@1,700&family=Rubik:ital,wght@1,300..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="sticky-top">
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -44,7 +47,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sobre nosotros</a>
+                <a class="nav-link" href="#menu">Sobre nosotros</a>
               </li>
             </ul>
           </div>
@@ -64,10 +67,9 @@
                 
                 <!-- Columna del texto -->
                 <div class="col-12 col-md-7 col-lg-8">
-                    <h2 class="text-decoration-underline text-center">SOBRE MÍ</h2>
-                    <p class="fs-1">
-                        Soy Alvaro, tengo 24 años y soy de Tucumán, Banda del Rio Sali. <br>
-                        Me gusta resolver problemas con código y aprender algo nuevo cada día. 
+                    <p class="fs-2" id="presentacion">
+                        Soy Álvaro Medina, tengo 24 años y soy de Tucumán, Banda del Rio Sali. <br>
+                        Me gusta resolver problemas con código y aprender algo nuevo cada día. <br>
                         Esta web es un espacio donde comparto quién soy, qué hago y qué me motiva.
                     </p>
                 </div>
@@ -76,67 +78,86 @@
       </section>
 
       <!-- Tarjetas  -->
-      <section id="tarjetas" class="my-3">
+      <section id="menu" class="my-3">
         <div class="container">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            <div class="col">
-              <div class="card">
-                <div class="card-body text-center">
-                  <h5 class="card-title fs-1">
-                    <i class="bi bi-person-plus-fill"></i> Networking
-                  </h5>
-
-                  <p class="card-text fs-4">
-                    Conocé gente copada como vos que tiene pasión por la
-                    tecnología.
-                  </p>
-                </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h1 class="text-center fw-bold" id="titulo">Aquí te cuento sobre mí</h1>
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed fw-bold fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Deportes
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Siempre busco hacerme tiempo para hacer deporte, aunque no siempre es fácil. Para mí, moverse es una forma de despejar la mente y mantener el equilibrio entre lo que hago frente a la pantalla y lo que siento físicamente. No necesito una rutina perfecta, solo constancia y ganas de sentirme bien.</div>
               </div>
             </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body text-center">
-                  <h5 class="card-title fs-1">
-                    <i class="bi bi-person-raised-hand"></i>Cuenta sobre vos
-                  </h5>
-
-                  <p class="card-text fs-4">
-                    Contá a otros sobre vos, tus intereses, proyectos e ideas de
-                    negocios.
-                  </p>
-                </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed fw-bold fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Metas que me mueven
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">A corto plazo, quiero seguir formándome como desarrollador y conseguir mi primera oportunidad en el mundo IT. A largo plazo, me gustaría combinar lo técnico con lo deportivo, quizás desarrollando proyectos que vinculen ambas pasiones. También valoro mucho crecer profesionalmente sin perder el equilibrio personal.</div>
               </div>
             </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body text-center">
-                  <h5 class="card-title fs-1">
-                    <i class="bi bi-stars"></i> Aporta valor
-                  </h5>
-
-                  <p class="card-text fs-4">
-                    Comparte lo que sabés con otros para ayudarlos a crecer y
-                    que puedan lograr sus metas.
-                  </p>
-                </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed fw-bold fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Lo que me inspira
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Cuando no estoy programando ni entrenando, me gusta escuchar música, ver documentales sobre tecnología o historia, y a veces simplemente descansar viendo series. Disfruto los momentos tranquilos, y creo que tener hobbies variados ayuda a ser más creativo y a ver los problemas desde otra perspectiva.</div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+
+    <!-- --------------------------------------------- -->
+
+
     <footer class="footer text-white">
       <div class="container">
         <div class="row">
-          <div class="col-12 fs-2 text-center">
+          <div class="col-12 fs-2 text-center py-2">
             <span class="fw-bold">W</span>eb<i class="bi bi-people-fill"></i
             >Social
+            <p class="py-2"><i class="bi bi-c-circle">Todos los derechos reservados</i></p>
           </div>
-          <div class="col"></div>
-          <div class="col"></div>
+
+          <div class=" d-flex justify-content-around py-2">
+            <div class="col text-center" id="enlaces">
+              <i class="bi bi-instagram">
+                <a href="https://www.instagram.com/6alvarom/" class="text-decoration-none  text-white">Instagram</a>
+              </i>
+            </div>
+  
+            <div class="col text-center" id="enlaces">
+              <i class="bi bi-facebook">
+                <a href="https://www.facebook.com/6alvarom/?locale=es_LA" class="text-decoration-none  text-white">Facebook</a>
+              </i>
+            </div>
+  
+            <div class="col text-center" id="enlaces">
+              <i class="bi bi-whatsapp">
+                <a href="https://wa.me/543816658695" target="_blank" class="text-decoration-none text-white">
+                  WhatsApp
+                </a>
+              </i>
+            </div>
+          </div>
+
         </div>
       </div>
     </footer>
+
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
