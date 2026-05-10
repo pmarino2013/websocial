@@ -6,6 +6,7 @@
   font-variation-settings:
     "wdth" 100;
 
+    color: #e9c46a;
 
 }
 
@@ -26,4 +27,12 @@
 
 footer {
     background-color: #264653;
+}
+
+#sectionSobreMi {
+    background-color: #2a9d8f;
+}
+
+#flush-headingOne {
+    background-color: #e9c46a;
 }
